@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: all .5s;
+    font-family: 'Oswald';
+}
+
+:root {
+    --bg-color: #ffffff;
+    --main-color: #0099ff;
+    --text-color: #121212;
+    --span-color: #00b400;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #121212;
+      --text-color: #f2e9e4;
+      --span-color: #00b400;
+    }
+  }
+  
+
+body {
+    align-items: center;
+}
+
+header {
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 80px;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+h1::selection,
+ul::selection,
+span::selection {
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+
+.logo {
+    height: 40px;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    color: var(--main-color);
+    background-color: var(--main-color);
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+    color: var(--main-color);
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    font-size: 20px;
+    justify-items: center;
+    list-style: none;
+    user-select: none;
+}
+
+#btn-mobile {
+    display: none;
+    color: #e74443;
+}
+
+.nav2 {
+    display: none;
+}
