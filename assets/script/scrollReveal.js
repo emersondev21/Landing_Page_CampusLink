@@ -8,15 +8,15 @@ ScrollReveal().reveal('.projeto', {
     delay: 250
 });
 
-ScrollReveal().reveal('.objetivo', {
+ScrollReveal().reveal('.problem', {
     delay: 250
 });
 
-ScrollReveal().reveal('.demo_contato', {
+ScrollReveal().reveal('.timeline', {
     delay: 250
 });
 
-ScrollReveal().reveal('.time', {
+ScrollReveal().reveal('.features', {
     delay: 250
 });
 

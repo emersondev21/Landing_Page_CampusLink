@@ -1,3 +1,3 @@
-# Landing Page CrashDetection
+# Landing Page CampusLink
 ## Acesse Agora
-https://crash-detection.netlify.app
+https://campus--link.vercel.app/
