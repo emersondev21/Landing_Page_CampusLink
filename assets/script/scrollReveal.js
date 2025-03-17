@@ -23,3 +23,19 @@ ScrollReveal().reveal('.features', {
 ScrollReveal().reveal('.teste', {
     delay: 250
 });
+
+ScrollReveal().reveal('.videoContainer', {
+    delay: 250
+});
+
+ScrollReveal().reveal('.about', {
+    delay: 250
+});
+
+ScrollReveal().reveal('.title', {
+    delay: 250
+});
+
+ScrollReveal().reveal('.equipe', {
+    delay: 250
+});

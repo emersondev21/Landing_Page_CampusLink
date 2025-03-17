@@ -217,13 +217,13 @@ section {
     margin: 80px auto;
     display: flex;
     flex-direction: column;
-  }
-  
-  .timeline-content {
+}
+
+.timeline-content {
     padding: 20px;
     background: #1f1f1f;
     -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     border-radius: 5px;
     color: white;
     padding: 1.75rem;
@@ -232,43 +232,52 @@ section {
     margin: 1rem;
     margin-bottom: 20px;
     border-radius: 6px;
-  }
-  
-  .timeline-component {
+}
+
+.timeline-component {
     margin: 0px 20px 20px 20px;
-  }
-  
-  @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
     .timeline {
-      display: grid;
-      grid-template-columns: 1fr 3px 1fr;
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
     }
+
     .timeline-middle {
-      position: relative;
-      background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
-      width: 3px;
-      height: 100%;
+        position: relative;
+        background-image: linear-gradient(45deg, #ffffff, #66ccff, #0099ff);
+
+        width: 3px;
+        height: 100%;
     }
+
     .main-middle {
-      opacity: 0;
+        opacity: 0;
     }
+
     .timeline-circle {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, #ffffff, #66ccff, #0099ff);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
-  }
-  
-  /*hover ToolTip*/
-  .left:hover {transform: translateX(-6px);  }
-  .right:hover {transform: translateX(6px); }
-  
+}
+
+/*hover ToolTip*/
+.left:hover {
+    transform: translateX(-6px);
+}
+
+.right:hover {
+    transform: translateX(6px);
+}
+
 
 .features {
     height: 100vh;
@@ -307,6 +316,14 @@ section {
 
 .note img {
     width: 150%;
+}
+
+.about img {
+    width: 40%;
+}
+
+.about h1 {
+    font-size: 40px;
 }
 
 .teste {
@@ -414,11 +431,62 @@ footer .menu li a:hover {
         height: 0;
     }
 
-    .background{
+    .background {
         display: none;
     }
 
 }
+
+.equipe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.equipeTop, .equipeBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipe h2 {
+    color: var(--main-color);
+}
+
+.equipe h3 {
+    color: white;
+}
+
+.equipeTop div, .equipeBottom div {
+
+    width: 100%;
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 600px) {
 
@@ -537,7 +605,7 @@ footer .menu li a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }   
+    }
 
     .home .button {
         width: 80%;
@@ -554,23 +622,24 @@ footer .menu li a:hover {
     }
 
     .features {
-    height: 50vh;
-    color: var(--main-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-around; */
-}
+        height: 50vh;
+        color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-around; */
+    }
 
-.features h1 {
-    font-size: 50px;
-    text-align: center;
-}
+    .features h1 {
+        font-size: 50px;
+        text-align: center;
+    }
 
-.features-img {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
+    .features-img {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+    }
 }
